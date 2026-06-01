@@ -13,6 +13,9 @@ ai_srcディレクトリで
 
 とすると全システムのコンパイルができる。  
 
+## 解説ドキュメント
+- [Akochanがどのように機能するか](./akochan_how_it_works.md)
+
 ## GitHub Codespacesでのビルド
 このリポジトリにはCodespaces用の`.devcontainer`設定が含まれています。
 

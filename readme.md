@@ -16,6 +16,9 @@ Then run following in root directory
 
 Then you will see system.exe in root directory.  
 
+## Architecture document
+- [Akochan: How it works](./akochan_how_it_works.md)
+
 ## Build with GitHub Codespaces
 This repository contains `.devcontainer` settings for Codespaces.
 
