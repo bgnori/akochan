@@ -10,5 +10,5 @@
       }
     }
   },
-  "postCreateCommand": "make -f ai_src/Makefile_Linux && make -f Makefile_Linux"
+  "postCreateCommand": "cd ai_src && make -f Makefile_Linux && cd .. && make -f Makefile_Linux"
 }

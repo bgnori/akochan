@@ -19,7 +19,7 @@ ai_srcディレクトリで
 1. 本リポジトリをCodespacesで開く  
 2. コンテナ作成完了まで待つ（postCreateCommandで`libai.so`と`system.exe`をビルド）  
 3. 手動でビルドする場合は以下を実行  
-   - `make -f ai_src/Makefile_Linux`  
+   - `cd ai_src && make -f Makefile_Linux`  
    - `make -f Makefile_Linux`  
 
 ## system.exeコンパイル手順(windows)

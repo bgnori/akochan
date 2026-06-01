@@ -22,7 +22,7 @@ This repository contains `.devcontainer` settings for Codespaces.
 1. Open this repository in Codespaces.
 2. Wait for container creation to complete (the post-create step builds `libai.so` and `system.exe`).
 3. If you need to build manually, run:
-   - `make -f ai_src/Makefile_Linux`
+   - `cd ai_src && make -f Makefile_Linux`
    - `make -f Makefile_Linux`
 
 ## Build with Windows
