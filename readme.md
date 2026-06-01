@@ -16,6 +16,15 @@ Then run following in root directory
 
 Then you will see system.exe in root directory.  
 
+## Build with GitHub Codespaces
+This repository contains `.devcontainer` settings for Codespaces.
+
+1. Open this repository in Codespaces.
+2. Wait for container creation to complete (the post-create step builds `libai.so` and `system.exe`).
+3. If you need to build manually, run:
+   - `make -f ai_src/Makefile_Linux`
+   - `make -f Makefile_Linux`
+
 ## Build with Windows
 Check you can link lboost_system, and rewrite LIBS of Makefile(both in ai_src and root directory).
 In the environment of the author, "-lboost_system-mgw62-mt-x64-1_70" is valid.
@@ -54,4 +63,3 @@ random seed = 101, chicha = 1
 
 This is efficient when you want to update AI strategy and play against previous version.
 Tactics of each player can be set with "tactics" of setup_match.json.
-

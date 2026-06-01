@@ -13,6 +13,15 @@ ai_srcディレクトリで
 
 とすると全システムのコンパイルができる。  
 
+## GitHub Codespacesでのビルド
+このリポジトリにはCodespaces用の`.devcontainer`設定が含まれています。
+
+1. 本リポジトリをCodespacesで開く  
+2. コンテナ作成完了まで待つ（postCreateCommandで`libai.so`と`system.exe`をビルド）  
+3. 手動でビルドする場合は以下を実行  
+   - `make -f ai_src/Makefile_Linux`  
+   - `make -f Makefile_Linux`  
+
 ## system.exeコンパイル手順(windows)
 lboost_systemがリンク可能か確認し、可能であればMakefile（ai_srcディレクトリとルートディレクトリ両方）のLIBSの定義を書き換える。（boostをビルドすれば可能になるはず。）
 製作者の環境では、"-lboost_system-mgw62-mt-x64-1_70" が利用可能であるが自分の環境にあったものに書き換える。 

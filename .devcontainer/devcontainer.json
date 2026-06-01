@@ -1,0 +1,14 @@
+{
+  "name": "akochan-build",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "make -f ai_src/Makefile_Linux && make -f Makefile_Linux"
+}
