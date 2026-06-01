@@ -7,9 +7,9 @@ This document explains the runtime structure of Akochan from code.
 Akochan consists of two layers:
 
 - **Mahjong engine layer** (game state, legal actions, progression)
-  - Main files: `/tmp/workspace/bgnori/akochan/mjai_manager.cpp`, `/tmp/workspace/bgnori/akochan/share/make_move.cpp`
+  - Main files:   `mjai_manager.cpp`, `/tmp/workspace/bgnori/akochan/share/make_move.cpp`
 - **Decision layer (AI)**
-  - Main files: `/tmp/workspace/bgnori/akochan/ai_src/selector.cpp`, `/tmp/workspace/bgnori/akochan/ai_src/tactics.cpp`
+  - Main files:   `ai_src/selector.cpp`, `/tmp/workspace/bgnori/akochan/ai_src/tactics.cpp`
 
 `system.exe` coordinates these layers via command modes in `/tmp/workspace/bgnori/akochan/main.cpp`.
 
@@ -83,7 +83,7 @@ Tactics are loaded from JSON:
 - multi-player setup: `set_tactics(...)`
 - single profile for all players: `set_tactics_one(...)`
 
-Default mjai configuration is `/tmp/workspace/bgnori/akochan/setup_mjai.json`.
+Default mjai configuration is `setup_mjai.json`.
 It includes parameters like placement utility (`jun_pt`) and estimation model switches.
 
 ## 7. MJAI online integration
